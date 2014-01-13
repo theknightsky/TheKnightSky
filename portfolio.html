@@ -17,6 +17,23 @@
   </head>
   <body>
 
+<!-- TEMPLATES -->
+
+<script type="text/x-handlebars-template" id="portfolio-item-template">
+      <div class="inner-small">
+          <h1>{{title}}</h1>
+          <p>{{description}}</p>
+          <div class="resources red">
+          {{#each resources}}
+            <span class="rsc">{{this}}</span>
+          {{/each}}
+          </div>
+          {{#each images}}
+          <img src="{{this}}">
+          {{/each}}
+      </div>
+</script>
+
 <!-- START PAGE -->
 
   <nav id="main-nav">
@@ -56,7 +73,7 @@
   </div>
 
   <div class="portfolio-items-container">
-    <div class="portfolio-item bg-eee">
+    <!-- <div class="portfolio-item bg-eee">
       <div class="inner-small">
           <h1>Passkeep</h1>
           <p>A web application that I created in order to stop forgetting my passwords.  Passkeep stores all my passwords in one safe place.</p>
@@ -68,13 +85,13 @@
             <span class="rsc">Github</span>
             <span class="rsc">Git</span>
           </div>
-          <img src="img/Passkeep01.PNG">
-          <img src="img/Passkeep02.PNG">
-          <img src="img/Passkeep03.PNG">
+          <img src="img/Passkeep04.PNG">
+          <img src="img/Passkeep05.PNG">
+          <img src="img/Passkeep06.PNG">
       </div>
-    </div>
+    </div> -->
 
-    <div class="portfolio-item bg-333 color-white">
+    <!-- <div class="portfolio-item bg-333 color-white">
       <div class="inner-small">
           <h1>Learnkey Mobile Application</h1>
           <p>A web application that I created in order to stop forgetting my passwords.  Passkeep stores all my passwords in one safe place.</p>
@@ -98,7 +115,7 @@
           <img src="http://placehold.it/1000X600">
           <img src="http://placehold.it/1000X600">
       </div>
-    </div>
+    </div> -->
 
     <!-- End portfolio-item-container -->
   </div>
@@ -106,9 +123,7 @@
 
 <!-- END PAGE -->
 
-
-
-  <!-- // <script src="js/libs/require.js" data-main="js/main"></script> -->
+<script src="javascripts/libs/require.js" data-main="javascripts/main"></script>
     <!--[if lt IE 7]>
     <script src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js'></script>
     <script>

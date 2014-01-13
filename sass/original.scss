@@ -2,11 +2,27 @@
 @import "partials/base";
 
 // Then we'll import the compass extension
-@import "h5bp";
+@import "html5-boilerplate-2.1.0";
 
 // Now, you can simply include everything
 // (except print and helpers) by uncommeting this line
-@include h5bp-normalize;
+//@include html5-boilerplate;
+
+// Or, you can pick and choose only the sections
+// you want by using the this include
+@include html5-boilerplate-normalize((
+  html5,
+  base,
+  links,
+  typography,
+  lists,
+  images,
+  svg,
+  figures,
+  forms,
+  tables
+));
+
 
 // Or, you can import the "overrides" partial if
 // you want more control over individual mixins
@@ -19,9 +35,13 @@
 @import "sk-styles";
 
 // Helpers classes should come second-to-last
-@include h5bp-helpers;
+@include html5-boilerplate-helpers((
+  ir,
+  hidden,
+  visuallyhidden,
+  invisible,
+  clearfix
+));
 
 // Media should come last
 @import "partials/media";
-
-

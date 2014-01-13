@@ -1,0 +1,144 @@
+@import "compass/css3";
+
+#main-header{
+
+	&.center-stage{
+		#sk-container{
+			top: 50%;
+		}
+		#s-container{
+		opacity: 1;			
+		}
+		#k-container{
+			opacity: 1;
+		}
+	}
+
+	&.start-fadein{
+
+		#nav{top: 0;}
+		#name{opacity: 1; bottom: 1em;}
+		#sk-container{
+			margin-left: -175px;
+		}
+		#s-container{
+			@include rotate(45deg);
+			left: 10%;
+			#s-top{
+				top: -1.5em;
+			}
+			#s-bottom{
+				bottom: -1.5em;
+			}	
+		}
+		#k-container{
+			top: -12%;
+			right: 0;
+			height: 180px;
+			#k-top{
+				@include rotate(90deg);
+				height: 100px;
+				width: 95px;
+
+				@include border-radius(0 150px 0 0);
+				@include transition(all 0.4s);
+			}
+
+			#k-bottom{
+				@include rotate(-90deg);
+				height: 100px;
+				width: 95px;
+				@include border-radius(0 0 150px 0);
+				@include transition(all 0.4s);
+			}
+		}
+	}
+}
+
+//-------------------
+
+#sk-container{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	height: 150px;
+	width: 350px;
+	margin-top: -90px;
+	margin-left: -175px;
+
+	@include transition(all 0.8s);
+
+}
+
+#s-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8888;
+	opacity: 0;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+
+	@include transition(all 0.4s);
+}
+#s-top{
+	position: absolute;
+	height: 150px;
+	width: 75px;
+	top: 0;
+	left: 0;
+	background: #fff;
+
+	@include border-radius(150px 0 0 150px);
+	@include transition(all 0.4s);
+}
+
+#s-bottom{
+	position: absolute;
+	height: 150px;
+	width: 75px;
+	bottom: 0;
+	right: 0;
+	background: #ddd;
+	@include border-radius(0 150px 150px 0);
+	@include transition(all 0.4s);
+}
+
+//TEMPORARY
+
+#k-container{
+	position: absolute;
+	top: 0;
+	right: 0.5em;
+	z-index: 8888;
+	opacity: 0;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+
+	@include transition(all 0.4s);
+}
+
+#k-top{
+	position: absolute;
+	width: 150px;
+	height: 75px;
+	top: 0;
+	left: 0;
+	background: #fff;
+
+	@include border-radius(150px 150px 0 0);
+	@include transition(all 0.4s);
+}
+
+#k-bottom{
+	position: absolute;
+	width: 150px;
+	height: 75px;
+	bottom: 0;
+	left: 0;
+	background: #ddd;
+	@include border-radius(0 0 150px 150px);
+	@include transition(all 0.4s);
+}

@@ -1,0 +1,209 @@
+/* line 6, ../sass/sk-styles.scss */
+#main-header.center-stage #sk-container {
+  top: 50%;
+}
+/* line 9, ../sass/sk-styles.scss */
+#main-header.center-stage #s-container {
+  opacity: 1;
+}
+/* line 12, ../sass/sk-styles.scss */
+#main-header.center-stage #k-container {
+  opacity: 1;
+}
+/* line 19, ../sass/sk-styles.scss */
+#main-header.start-fadein #nav {
+  top: 0;
+}
+/* line 20, ../sass/sk-styles.scss */
+#main-header.start-fadein #name {
+  opacity: 1;
+  bottom: 1em;
+}
+/* line 21, ../sass/sk-styles.scss */
+#main-header.start-fadein #sk-container {
+  margin-left: -175px;
+}
+/* line 24, ../sass/sk-styles.scss */
+#main-header.start-fadein #s-container {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 10%;
+}
+/* line 27, ../sass/sk-styles.scss */
+#main-header.start-fadein #s-container #s-top {
+  top: -1.5em;
+}
+/* line 30, ../sass/sk-styles.scss */
+#main-header.start-fadein #s-container #s-bottom {
+  bottom: -1.5em;
+}
+/* line 34, ../sass/sk-styles.scss */
+#main-header.start-fadein #k-container {
+  top: -12%;
+  right: 0;
+  height: 180px;
+}
+/* line 38, ../sass/sk-styles.scss */
+#main-header.start-fadein #k-container #k-top {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  height: 100px;
+  width: 95px;
+  -webkit-border-radius: 0 150px 0 0;
+  -moz-border-radius: 0 150px 0 0;
+  -ms-border-radius: 0 150px 0 0;
+  -o-border-radius: 0 150px 0 0;
+  border-radius: 0 150px 0 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 47, ../sass/sk-styles.scss */
+#main-header.start-fadein #k-container #k-bottom {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  height: 100px;
+  width: 95px;
+  -webkit-border-radius: 0 0 150px 0;
+  -moz-border-radius: 0 0 150px 0;
+  -ms-border-radius: 0 0 150px 0;
+  -o-border-radius: 0 0 150px 0;
+  border-radius: 0 0 150px 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 60, ../sass/sk-styles.scss */
+#sk-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 150px;
+  width: 350px;
+  margin-top: -90px;
+  margin-left: -175px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+/* line 73, ../sass/sk-styles.scss */
+#s-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  opacity: 0;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 85, ../sass/sk-styles.scss */
+#s-top {
+  position: absolute;
+  height: 150px;
+  width: 75px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-border-radius: 150px 0 0 150px;
+  -moz-border-radius: 150px 0 0 150px;
+  -ms-border-radius: 150px 0 0 150px;
+  -o-border-radius: 150px 0 0 150px;
+  border-radius: 150px 0 0 150px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 97, ../sass/sk-styles.scss */
+#s-bottom {
+  position: absolute;
+  height: 150px;
+  width: 75px;
+  bottom: 0;
+  right: 0;
+  background: #ddd;
+  -webkit-border-radius: 0 150px 150px 0;
+  -moz-border-radius: 0 150px 150px 0;
+  -ms-border-radius: 0 150px 150px 0;
+  -o-border-radius: 0 150px 150px 0;
+  border-radius: 0 150px 150px 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 110, ../sass/sk-styles.scss */
+#k-container {
+  position: absolute;
+  top: 0;
+  right: 0.5em;
+  z-index: 8888;
+  opacity: 0;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 123, ../sass/sk-styles.scss */
+#k-top {
+  position: absolute;
+  width: 150px;
+  height: 75px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-border-radius: 150px 150px 0 0;
+  -moz-border-radius: 150px 150px 0 0;
+  -ms-border-radius: 150px 150px 0 0;
+  -o-border-radius: 150px 150px 0 0;
+  border-radius: 150px 150px 0 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 135, ../sass/sk-styles.scss */
+#k-bottom {
+  position: absolute;
+  width: 150px;
+  height: 75px;
+  bottom: 0;
+  left: 0;
+  background: #ddd;
+  -webkit-border-radius: 0 0 150px 150px;
+  -moz-border-radius: 0 0 150px 150px;
+  -ms-border-radius: 0 0 150px 150px;
+  -o-border-radius: 0 0 150px 150px;
+  border-radius: 0 0 150px 150px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}

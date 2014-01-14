@@ -3,17 +3,22 @@
 // These override the primary ('mobile first') styles
 // Modify as content requires.
 // ========================================================================== */
+// @import "susy";
 
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
+// @media only screen and (min-width: 480px) {
+//   /* Style adjustments for viewports 480px and over go here */
+
+// }
+
+// @media only screen and (min-width: 768px) {
+//   /* Style adjustments for viewports 768px and over go here */
+
+// }
+
+@include at-breakpoint(6 30em){
+	#main-header{background: $purple;}
 
 }
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
-}
-
 
 
 // ==|== print styles =======================================================

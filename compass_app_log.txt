@@ -3192,3 +3192,16 @@ Load paths:
 2014-01-13 23:03:55 identical stylesheets/style.css 
 2014-01-13 23:45:20 overwrite stylesheets/style.css 
 2014-01-13 23:45:23 identical stylesheets/style.css 
+2014-01-14 10:36:54 overwrite stylesheets/style.css 
+2014-01-14 10:36:58 identical stylesheets/style.css 
+2014-01-14 10:37:08 overwrite stylesheets/style.css 
+2014-01-14 12:00:33     error sass/style.scss (Line 19 of sass/partials/_media.scss: Invalid CSS after "...der: background": expected ";", was ": $purple;")
+2014-01-14 12:00:33 overwrite stylesheets/style.css 
+2014-01-14 12:00:34     error sass/style.scss (Line 19 of sass/partials/_media.scss: Invalid CSS after "...der: background": expected ";", was ": $purple;")
+2014-01-14 12:00:34 identical stylesheets/style.css 
+2014-01-14 12:00:36     error sass/style.scss (Line 19 of sass/partials/_media.scss: Invalid CSS after "...der: background": expected ";", was ": $purple;")
+2014-01-14 12:00:36 identical stylesheets/style.css 
+2014-01-14 12:00:36     error sass/style.scss (Line 19 of sass/partials/_media.scss: Invalid CSS after "...der: background": expected ";", was ": $purple;")
+2014-01-14 12:00:36 identical stylesheets/style.css 
+2014-01-14 12:00:49 overwrite stylesheets/style.css 
+2014-01-14 12:00:51 identical stylesheets/style.css 

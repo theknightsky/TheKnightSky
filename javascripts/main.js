@@ -66,7 +66,7 @@ var portfolioItems = new PortfolioItemCollection([{
 		images: ['img/CYOH01.png', 'img/CYOH02.png', 'img/CYOH03.png', 'img/CYOH04.png']
 }]);
 
-var portfolioItemsView = new PortfolioItemListView({collection: portfolioItems});
+// var portfolioItemsView = new PortfolioItemListView({collection: portfolioItems});
 
 });
 

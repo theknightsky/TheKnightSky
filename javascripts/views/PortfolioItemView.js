@@ -2,7 +2,6 @@ define(['backbone','handlebars'], function(Backbone,Handlebars){
 
 
 	var PortfolioItemView = Backbone.View.extend({
-		className: 'portfolio-item bg-eee',
 		template: Handlebars.compile($('#portfolio-item-template').html()),
 		initialize: function(){
 			this.render();

@@ -20,6 +20,7 @@
 <!-- TEMPLATES -->
 
 <script type="text/x-handlebars-template" id="portfolio-item-template">
+    <div class="portfolio-item {{colorClass}}">
       <div class="inner-small">
           <h1>{{title}}</h1>
           <p>{{description}}</p>
@@ -31,7 +32,11 @@
           {{#each images}}
           <img src="{{this}}">
           {{/each}}
+          {{#each imagesHalf}}
+          <img src="{{this}}" class="img-half">
+          {{/each}}
       </div>
+    </div>
 </script>
 
 <!-- START PAGE -->
@@ -73,50 +78,6 @@
   </div>
 
   <div class="portfolio-items-container">
-    <!-- <div class="portfolio-item bg-eee">
-      <div class="inner-small">
-          <h1>Passkeep</h1>
-          <p>A web application that I created in order to stop forgetting my passwords.  Passkeep stores all my passwords in one safe place.</p>
-          <div class="resources red">
-            <span class="rsc">Susy Grid System</span>
-            <span class="rsc">Underscore.js</span>
-            <span class="rsc">Backbone.js</span>
-            <span class="rsc">Jquery</span>
-            <span class="rsc">Github</span>
-            <span class="rsc">Git</span>
-          </div>
-          <img src="img/Passkeep04.PNG">
-          <img src="img/Passkeep05.PNG">
-          <img src="img/Passkeep06.PNG">
-      </div>
-    </div> -->
-
-    <!-- <div class="portfolio-item bg-333 color-white">
-      <div class="inner-small">
-          <h1>Learnkey Mobile Application</h1>
-          <p>A web application that I created in order to stop forgetting my passwords.  Passkeep stores all my passwords in one safe place.</p>
-          <div class="resources red">
-            <span class="rsc">Susy Grid System</span>
-            <span class="rsc">Jquery</span>
-          </div>
-          <img src="http://placehold.it/1000X600">
-          <img src="http://placehold.it/1000X600">
-      </div>
-    </div>
-
-    <div class="portfolio-item">
-      <div class="inner-small">
-          <h1>Learnkey Icon Design</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, ut, iure, nemo veniam repellendus fugit ullam commodi dolor illum expedita natus architecto voluptatum ad sapiente rerum eos adipisci inventore aliquid!</p>
-          <div class="resources red">
-            <span class="rsc">Photoshop</span>
-            <span class="rsc">Adobe Illustrator</span>
-          </div>
-          <img src="http://placehold.it/1000X600">
-          <img src="http://placehold.it/1000X600">
-      </div>
-    </div> -->
-
     <!-- End portfolio-item-container -->
   </div>
 

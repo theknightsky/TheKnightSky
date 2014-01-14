@@ -12,6 +12,7 @@ define(['backbone','handlebars','PortfolioItemView'], function(Backbone,Handleba
 			this.collection.each(function(model){
 				var portfolioItemView = new PortfolioItemView({model: model});
 				this.$el.append(portfolioItemView.el);
+				// this.$el.append("hello");
 			}, this);
 
 			return this;

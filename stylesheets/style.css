@@ -887,7 +887,34 @@ body, select, input, textarea {
 @media (max-width: 30em) {
   /* line 19, ../sass/partials/_media.scss */
   #main-header {
-    background: #9b59b6;
+    height: 450px;
+  }
+
+  /* line 20, ../sass/partials/_media.scss */
+  #main-header.header-small {
+    height: 450px;
+  }
+
+  /* line 21, ../sass/partials/_media.scss */
+  #main-header #SJK {
+    font-size: 2em;
+  }
+
+  /* line 22, ../sass/partials/_media.scss */
+  #page-title h1 {
+    font-size: 3em;
+  }
+
+  /* line 23, ../sass/partials/_media.scss */
+  .portfolio-item .img-half {
+    width: 100%;
+    float: left;
+    margin-right: 3.44828%;
+  }
+  /* line 251, ../../../compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
+  .portfolio-item .img-half:nth-child(2n) {
+    float: left;
+    margin-right: 3.44828%;
   }
 }
 @media print {

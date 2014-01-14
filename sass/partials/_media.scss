@@ -27,6 +27,27 @@
 
 }
 
+@include at-breakpoint(30em 12 50em){
+	// #main-header{background:$purple;}
+	.portfolio-item{
+		.pf-info{
+			@include span-columns($total-columns);
+		}
+		.pf-images{
+			@include span-columns($total-columns);
+		}
+	}
+	// #main-header{height: 450px;}
+	// #main-header.header-small{height: 450px;}
+	// #main-header #SJK{font-size: 2em;}
+	// #page-title h1{font-size: 3em;}
+	// .portfolio-item .img-half{
+	// 	@include span-columns($total-columns);
+	// 	@include remove-nth-omega(2n);
+	// }
+
+}
+
 
 // ==|== print styles =======================================================
 // Print styles.

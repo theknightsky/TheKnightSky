@@ -9,6 +9,7 @@ require.config({
 		"PortfolioItem": "models/PortfolioItemModel",
 		"PortfolioItemCollection": "collections/PortfolioItemCollection",
 		"PortfolioItemView": "views/PortfolioItemView",
+		"PortfolioSlideView": "views/PortfolioSlideView",
 		"PortfolioItemListView": "views/PortfolioItemListView"
 	},
 	shim: {

@@ -39,16 +39,41 @@
     </div>
 </script>
 
+
+<script type="text/x-handlebars-template" id="portfolio-slide-template">
+    <div class="portfolio-item {{colorClass}}">
+      <div class="inner-small">
+        <div class="pf-info">
+            <h1>Slide View - {{title}}</h1>
+            <p>{{description}}</p>
+            <div class="resources red">
+            {{#each resources}}
+              <span class="rsc">{{this}}</span>
+            {{/each}}
+            </div>
+        </div>
+        <div class="pf-images">
+            {{#each images}}
+            <img src="{{this}}">
+            {{/each}}
+            {{#each imagesHalf}}
+            <img src="{{this}}" class="img-half">
+            {{/each}}
+        </div>
+      </div>
+    </div>
+</script>
+
 <!-- START PAGE -->
 
   <nav id="main-nav">
-    <div class="inner-small">
+    <!-- <div class="inner-small"> -->
       
       <ul id="main-menu" class="color-red">
         <li> <a href="index.html" class="fontawesome-reorder"></a></li>
       </ul>
 
-    </div>
+    <!-- </div> -->
   </nav>
 
   <header id="main-header" class="header-small bg-red center-stage start-fadein">
@@ -67,17 +92,25 @@
 
       </div> -->
 
-      <div id="SJK"><strong>SKYLER</strong>KNIGHT</div>
+      <!-- <div id="SJK"><strong>SKYLER</strong>KNIGHT</div> -->
     </div>
   </header>
+  <div class="page-outer">
 
-  <div id="page-title">
-    <div class="inner-small">
-      <h1 class="color-red">Portfolio</h1>
+    <div id="page-title-container">
+      <div class="inner-small">
+        <h1 id="page-title" class="color-red">Portfolio</h1>
+        <div id="portfolio-views">
+          <ul>
+            <li id="toList" class="fontawesome-reorder"> List View</li>
+            <li id="toSlide" class="fontawesome-columns"> Slide View</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="portfolio-items-container">
+    <div id="portfolio-items-container"></div>
+
     <!-- End portfolio-item-container -->
   </div>
 

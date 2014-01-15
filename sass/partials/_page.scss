@@ -80,17 +80,18 @@ body {
 	top: 0;
 	right: 0;
 	left: 0;
-	height: 90px;
+	height: 80px;
 	z-index: 9999;
+	line-height: 80px;
 	// padding: 0 2em;
 
 	/*Style*/
 	background: rgba(#000, 0.4);
 	a{
 		text-decoration: none;
+		line-height: 80px;
 		color: #fff;
 		font-size: 2em;
-		padding: 10px 20px;
 		@include border-radius(50%);
 	}
 

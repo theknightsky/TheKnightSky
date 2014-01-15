@@ -158,12 +158,30 @@ footer {
 	}
 }
 
+#page-outer{
+	#toList, #toSlide{
+		background:#eee;
+	}
+	&.slide-active{
+		#toSlide{
+			background: $red;
+			color: #fff;
+		}
+	}
+	&.list-active{
+		#toList{
+			background: $red;
+			color: #fff;
+		}
+	}
+}
+
 #page-title-container{
 	/*Layout*/
 	
 	#page-title{
 		margin: 40px 0;
-		@include span-columns(8, 14);
+		@include span-columns(5, 14);
 
 		font-size: 5em;
 		font-family: 'Source Sans Pro', 'sans-serif';
@@ -182,22 +200,20 @@ footer {
 		ul li{
 			list-style-type: none;
 			text-align: center;
-			background:#eee;
 			padding: 30px 0;
 			cursor: pointer;
 			@include span-columns(3, 6);
 			@include nth-omega(2n);
 
 			&:hover{
-				background: darken(#eee, 5%);
+				// background: darken(#eee, 5%);
+				// color: #000;
 			}
 		}
 	}
 }
 
-#portfolio-items-container.slide-container{
-	max-height: 500px;
-	overflow: hidden;
+#portfolio-items-container.slide-container{;
 
 	.portfolio-item{
 		height: 500px;

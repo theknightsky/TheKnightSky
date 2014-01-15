@@ -15,14 +15,31 @@
 
 // }
 
-@include at-breakpoint(6 30em){
+@include at-breakpoint(6 40em){
 	#main-header{height: 450px;}
 	#main-header.header-small{height: 450px;}
 	#main-header #SJK{font-size: 2em;}
-	#page-title h1{font-size: 3em;}
-	.portfolio-item .img-half{
-		@include span-columns($total-columns);
-		@include remove-nth-omega(2n);
+	#page-title-container{
+		#page-title{
+			@include span-columns($total-columns);
+			font-size: 3em;
+		}
+		#portfolio-views{
+			@include span-columns($total-columns);
+			margin: 0 0 2em 0;
+		}
+	}
+	.portfolio-item{
+		.pf-info{
+			@include span-columns($total-columns);
+		}
+		.pf-images{
+			@include span-columns($total-columns);
+		}
+		.img-half{
+			@include span-columns($total-columns);
+			@include remove-nth-omega(2n);
+		}
 	}
 
 }
@@ -30,6 +47,7 @@
 @include at-breakpoint(30em 12 50em){
 	// #main-header{background:$purple;}
 	.portfolio-item{
+		height: none;
 		.pf-info{
 			@include span-columns($total-columns);
 		}

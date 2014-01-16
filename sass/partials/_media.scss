@@ -47,6 +47,17 @@
 			margin: 0 0 2em 0;
 		}
 	}
+	#social-links{
+		ul li{
+			background:none;
+		}
+		ul li a{
+			&:hover{
+				background:none;
+				color: $yellow;
+			}
+		}
+	}
 	.portfolio-item{
 		.pf-info{
 			@include span-columns($total-columns);

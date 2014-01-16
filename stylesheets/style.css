@@ -493,20 +493,32 @@ body, select, input, textarea {
   color: #fff;
   text-decoration: none;
 }
+/* line 145, ../sass/partials/_page.scss */
+#main-menu ul a.active-red {
+  border-left: 5px solid #e74c3c;
+}
 /* line 146, ../sass/partials/_page.scss */
+#main-menu ul a.active-blue {
+  border-left: 5px solid #3498db;
+}
+/* line 147, ../sass/partials/_page.scss */
+#main-menu ul a.active-yellow {
+  border-left: 5px solid #f39c12;
+}
+/* line 150, ../sass/partials/_page.scss */
 #main-menu ul a.hover-red:hover {
-  background: #ea6153;
+  background: #e74c3c;
 }
-/* line 149, ../sass/partials/_page.scss */
+/* line 153, ../sass/partials/_page.scss */
 #main-menu ul a.hover-blue:hover {
-  background: #4aa3df;
+  background: #3498db;
 }
-/* line 152, ../sass/partials/_page.scss */
+/* line 156, ../sass/partials/_page.scss */
 #main-menu ul a.hover-yellow:hover {
-  background: #f4a62a;
+  background: #f39c12;
 }
 
-/* line 160, ../sass/partials/_page.scss */
+/* line 164, ../sass/partials/_page.scss */
 #main-header {
   /*Layout*/
   position: relative;
@@ -514,12 +526,12 @@ body, select, input, textarea {
   width: 100%;
   /*Style*/
 }
-/* line 169, ../sass/partials/_page.scss */
+/* line 173, ../sass/partials/_page.scss */
 #main-header.header-small {
   height: 480px;
 }
 
-/* line 174, ../sass/partials/_page.scss */
+/* line 178, ../sass/partials/_page.scss */
 #main-header #SJK {
   position: absolute;
   left: 0;
@@ -534,7 +546,7 @@ body, select, input, textarea {
   text-align: center;
 }
 
-/* line 195, ../sass/partials/_page.scss */
+/* line 199, ../sass/partials/_page.scss */
 #to-top {
   position: fixed;
   bottom: 5px;
@@ -545,29 +557,29 @@ body, select, input, textarea {
   line-height: 50px;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 205, ../sass/partials/_page.scss */
+/* line 209, ../sass/partials/_page.scss */
 #to-top a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 210, ../sass/partials/_page.scss */
+/* line 214, ../sass/partials/_page.scss */
 .main-section {
   padding: 40px 0px;
 }
-/* line 213, ../sass/partials/_page.scss */
+/* line 217, ../sass/partials/_page.scss */
 .main-section p {
   font-size: 1.5em;
   color: #888;
   font-family: 'Source Sans Pro', 'sans-serif';
 }
 
-/* line 220, ../sass/partials/_page.scss */
+/* line 224, ../sass/partials/_page.scss */
 #main-intro p {
   text-align: center;
 }
 
-/* line 225, ../sass/partials/_page.scss */
+/* line 229, ../sass/partials/_page.scss */
 #contact-form-container .inner-small {
   *zoom: 1;
   max-width: 49em;
@@ -583,7 +595,7 @@ body, select, input, textarea {
   display: table;
   clear: both;
 }
-/* line 231, ../sass/partials/_page.scss */
+/* line 235, ../sass/partials/_page.scss */
 #contact-form-container input, #contact-form-container textarea {
   width: 90%;
   margin-bottom: 1em;
@@ -595,18 +607,55 @@ body, select, input, textarea {
   outline-color: #f39c12;
   color: #999;
 }
-/* line 240, ../sass/partials/_page.scss */
+/* line 244, ../sass/partials/_page.scss */
 #contact-form-container input[type="submit"] {
   width: 100%;
   background: #f39c12;
   color: #976008;
 }
 
-/* line 266, ../sass/partials/_page.scss */
+/* line 253, ../sass/partials/_page.scss */
+#social-links ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+/* line 258, ../sass/partials/_page.scss */
+#social-links ul li {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  text-align: center;
+  height: 125px;
+  line-height: 125px;
+  font-size: 1.5em;
+  background: #eee;
+  margin-bottom: 2em;
+}
+/* line 184, ../../../compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
+#social-links ul li:nth-child(3n) {
+  float: right;
+  margin-right: 0;
+}
+/* line 268, ../sass/partials/_page.scss */
+#social-links ul li a {
+  height: 100%;
+  display: block;
+  color: #888;
+  text-decoration: none;
+}
+/* line 274, ../sass/partials/_page.scss */
+#social-links ul li a:hover {
+  background: #f39c12;
+  color: #fff;
+}
+
+/* line 300, ../sass/partials/_page.scss */
 #page-title-container {
   /*Layout*/
 }
-/* line 269, ../sass/partials/_page.scss */
+/* line 303, ../sass/partials/_page.scss */
 #page-title-container #page-title {
   margin: 40px 0;
   width: 100%;
@@ -617,30 +666,30 @@ body, select, input, textarea {
   font-family: 'Source Sans Pro', 'sans-serif';
 }
 
-/* line 303, ../sass/partials/_page.scss */
+/* line 337, ../sass/partials/_page.scss */
 #portfolio-items-container {
   margin: 0;
   padding: 0;
 }
-/* line 307, ../sass/partials/_page.scss */
+/* line 341, ../sass/partials/_page.scss */
 #portfolio-items-container li {
   list-style-type: none;
 }
 
-/* line 312, ../sass/partials/_page.scss */
+/* line 346, ../sass/partials/_page.scss */
 .portfolio-item {
   /*Layout*/
   padding: 40px 0;
   font-family: 'Source Sans Pro', 'sans-serif';
 }
-/* line 317, ../sass/partials/_page.scss */
+/* line 351, ../sass/partials/_page.scss */
 .portfolio-item .pf-info {
   width: 100%;
   float: left;
   margin-right: 1.44928%;
   display: inline;
 }
-/* line 321, ../sass/partials/_page.scss */
+/* line 355, ../sass/partials/_page.scss */
 .portfolio-item .pf-images {
   padding: 1em 0;
   width: 100%;
@@ -648,26 +697,26 @@ body, select, input, textarea {
   margin-right: 1.44928%;
   display: inline;
 }
-/* line 325, ../sass/partials/_page.scss */
+/* line 359, ../sass/partials/_page.scss */
 .portfolio-item .pf-images img {
   height: auto;
   max-width: 100%;
 }
-/* line 331, ../sass/partials/_page.scss */
+/* line 365, ../sass/partials/_page.scss */
 .portfolio-item h1 {
   font-weight: 300;
 }
-/* line 335, ../sass/partials/_page.scss */
+/* line 369, ../sass/partials/_page.scss */
 .portfolio-item p {
   font-size: 1.2em;
 }
-/* line 339, ../sass/partials/_page.scss */
+/* line 373, ../sass/partials/_page.scss */
 .portfolio-item img {
   height: auto;
   max-width: 100%;
   margin: 2em 0;
 }
-/* line 346, ../sass/partials/_page.scss */
+/* line 380, ../sass/partials/_page.scss */
 .portfolio-item .img-half {
   width: 49.27536%;
   float: left;
@@ -680,13 +729,13 @@ body, select, input, textarea {
   margin-right: 0;
 }
 
-/* line 353, ../sass/partials/_page.scss */
+/* line 387, ../sass/partials/_page.scss */
 .portfolio-item .resources {
   position: relative;
   padding: 2em 0;
   border-bottom: 1px solid rgba(153, 153, 153, 0.5);
 }
-/* line 358, ../sass/partials/_page.scss */
+/* line 392, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc {
   display: inline-block;
   position: relative;
@@ -703,13 +752,13 @@ body, select, input, textarea {
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 373, ../sass/partials/_page.scss */
+/* line 407, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc:hover {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 378, ../sass/partials/_page.scss */
+/* line 412, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc::before {
   content: '';
   position: absolute;
@@ -721,7 +770,7 @@ body, select, input, textarea {
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
 }
-/* line 389, ../sass/partials/_page.scss */
+/* line 423, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc::after {
   content: '';
   position: absolute;
@@ -737,7 +786,7 @@ body, select, input, textarea {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 403, ../sass/partials/_page.scss */
+/* line 437, ../sass/partials/_page.scss */
 .portfolio-item .resources.red span.rsc {
   background: #e74c3c;
 }
@@ -1184,18 +1233,28 @@ body, select, input, textarea {
   }
 
   /* line 51, ../sass/partials/_media.scss */
+  #social-links ul li {
+    background: none;
+  }
+  /* line 55, ../sass/partials/_media.scss */
+  #social-links ul li a:hover {
+    background: none;
+    color: #f1c40f;
+  }
+
+  /* line 62, ../sass/partials/_media.scss */
   .portfolio-item .pf-info {
     width: 100%;
     float: left;
     margin-right: 3.44828%;
   }
-  /* line 54, ../sass/partials/_media.scss */
+  /* line 65, ../sass/partials/_media.scss */
   .portfolio-item .pf-images {
     width: 100%;
     float: left;
     margin-right: 3.44828%;
   }
-  /* line 57, ../sass/partials/_media.scss */
+  /* line 68, ../sass/partials/_media.scss */
   .portfolio-item .img-half {
     width: 100%;
     float: left;

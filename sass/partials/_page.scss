@@ -142,14 +142,18 @@ body {
 			color: #fff;
 			text-decoration: none;
 
+			&.active-red{border-left: 5px solid $red;}
+			&.active-blue{border-left: 5px solid $blue;}
+			&.active-yellow{border-left: 5px solid $yellow;}
+
 			&.hover-red{
-				&:hover{background: lighten($red, 5%);}
+				&:hover{background: $red;}
 			}
 			&.hover-blue{
-				&:hover{background: lighten($blue, 5%);}
+				&:hover{background: $blue;}
 			}
 			&.hover-yellow{
-				&:hover{background: lighten($yellow, 5%);}
+				&:hover{background: $yellow;}
 			}
 
 		}
@@ -243,6 +247,36 @@ footer {
 		color: darken($yellow, 20%);
 	}
 	
+}
+
+#social-links{
+	ul{
+		margin: 0 auto;
+		padding: 0;
+		width: 80%;
+
+		li{
+			@include span-columns(3, 12);
+			@include nth-omega(3n);
+			text-align: center;
+			height: 125px;
+			line-height: 125px;
+			font-size: 1.5em;
+			background: #eee;
+			margin-bottom: 2em;
+		}
+		li a{
+			height: 100%;
+			display: block;
+			color: #888;
+			text-decoration: none;
+
+			&:hover{
+				background: $yellow;
+				color: #fff;
+			}
+		}
+	}
 }
 
 // #page-outer{

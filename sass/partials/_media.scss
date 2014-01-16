@@ -16,6 +16,7 @@
 // }
 
 @include at-breakpoint(6 40em){
+	#to-top{display: none;}
 	#main-menu{
 		left: -250px;
 		width: 250px;

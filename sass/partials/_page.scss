@@ -214,18 +214,37 @@ footer {
 		color: #fff;
 	}
 }
-
-#main-intro{
-	/*Layout*/
-	padding: 40px 0;
+.main-section{
+	padding: 40px 0px;
 
 	p{
-		/*Style*/
-		color: #888;
 		font-size: 1.5em;
-		text-align: center;
+		color: #888;
 		font-family: 'Source Sans Pro', 'sans-serif';
 	}
+}
+#main-intro{
+	p{text-align: center;}
+}
+
+#contact-form-container{
+
+	input, textarea{
+		// @include span-columns($total-columns);
+		width: 90%;
+		margin-bottom: 1em;
+		@include appearance(none);
+		border: none;
+		padding: 0.5em 5%;
+		outline-color: $yellow;
+		color: #999;
+	}
+	input[type="submit"]{
+		width: 100%;
+		background: $yellow;
+		color: darken($yellow, 20%);
+	}
+	
 }
 
 // #page-outer{
@@ -251,7 +270,7 @@ footer {
 	
 	#page-title{
 		margin: 40px 0;
-		@include span-columns(5, 14);
+		@include span-columns($total-columns);
 
 		font-size: 5em;
 		font-family: 'Source Sans Pro', 'sans-serif';

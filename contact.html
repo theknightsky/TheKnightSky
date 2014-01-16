@@ -72,12 +72,18 @@
         </div>
       </div>
 
-    <div id="main-intro" class="bg-eee">
+    <div id="contact-form-container" class="main-section bg-eee">
       <div class="inner-small">
-        <p><span class="color-yellow">Email:</span></p>
-        <p>skyler.knight22@gmail.com</p>
-        <p><span class="color-yellow">Phone:</span></p>
-        <p>1 (435) 691 4467</p>
+          <form action="mailto:admin@example.com" enctype="text/plain" method="post">
+          <p>Name:</p>
+          <p><input name="Name" type="text" id="Name" size="40"></p>
+          <p>E-mail address:</p>
+          <p><input name="E-mail" type="text" id="E-mail" size="40"></p>
+          <p>Comment:</p>
+          <p><textarea name="Comment" cols="55" rows="5"
+          id="Comment"></textarea></p>
+          <p><input type="submit" name="Submit" value="Submit"></p>
+          </form>
       </div>
     </div>
 

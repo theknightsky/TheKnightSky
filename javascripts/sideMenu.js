@@ -32,17 +32,6 @@ var sideMenu = (function(){
 					}
 				}
 
-			// button.addEventListener(eventtype, function(e){
-			// 	e.stopPropagation();
-			// 	e.preventDefault();
-			// 	classie.className = '';
-			// 	classie.add(fullWrap, 'side-menu');
-			// 	setTimeout(function(){
-			// 		classie.add(fullWrap, 'side-menu-open');
-			// 	}, 25);
-			// 	document.addEventListener(eventtype, domClickFn);
-			// });
-
 			button.on(eventtype, function(e){
 				e.stopPropagation();
 				e.preventDefault();

@@ -142,18 +142,18 @@ body {
 			color: #fff;
 			text-decoration: none;
 
-			&.active-red{border-bottom: 5px solid $red;}
-			&.active-blue{border-bottom: 5px solid $blue;}
-			&.active-yellow{border-bottom: 5px solid $yellow;}
+			&.active-red{color: $red;}
+			&.active-blue{color: $blue;}
+			&.active-yellow{color: $yellow;}
 
 			&.hover-red{
-				&:hover{background: $red;}
+				&:hover{background: $red; color: #fff;}
 			}
 			&.hover-blue{
-				&:hover{background: $blue;}
+				&:hover{background: $blue; color: #fff;}
 			}
 			&.hover-yellow{
-				&:hover{background: $yellow;}
+				&:hover{background: $yellow; color: #fff;}
 			}
 
 		}
@@ -368,6 +368,12 @@ footer {
 
 	p{
 		font-size: 1.2em;
+	}
+	p a{
+		text-decoration: none;
+		color: $red;
+
+		&:hover{text-decoration: underline;}
 	}
 
 	img{

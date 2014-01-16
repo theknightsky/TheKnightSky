@@ -24,23 +24,30 @@
       <div class="inner-small">
           <h1>{{title}}</h1>
           <p>{{description}}</p>
+          <p>
+           {{#if links}}
+            {{#each links}}
+              View on <a target="_blank" href="{{this.link}}" class="{{icon}}"> {{source}}</a>
+            {{/each}}
+          {{/if}}
+          </p>
           <div class="resources red">
           {{#each resources}}
             <span class="rsc">{{this}}</span>
           {{/each}}
           </div>
           {{#each images}}
-          <img src="{{this}}">
+            <img src="{{this}}">
           {{/each}}
           {{#each imagesHalf}}
-          <img src="{{this}}" class="img-half">
+            <img src="{{this}}" class="img-half">
           {{/each}}
       </div>
     </div>
 </script>
 
 
-<script type="text/x-handlebars-template" id="portfolio-slide-template">
+<!-- <script type="text/x-handlebars-template" id="portfolio-slide-template">
     <div class="portfolio-item {{colorClass}}">
       <div class="inner-small">
       <button id="prevSlide">Previous</button>
@@ -64,7 +71,7 @@
         </div>
       </div>
     </div>
-</script>
+</script> -->
 
 <!-- START PAGE -->
 <div id="full-wrap" name="top">
@@ -91,7 +98,7 @@
 
     <header id="main-header" class="header-small bg-red">
       <div class="inner-small">
-        <!-- <div id="sk-container">
+        <div id="sk-container">
           
           <div id="s-container">
             <div id="s-top"></div>
@@ -103,7 +110,7 @@
             <div id="k-bottom"></div>
           </div>
 
-        </div> -->
+        </div>
 
         <div id="sk-image-container">
            <img src="images/SK-logo.png" alt="Skyler J. Knight">

@@ -18,6 +18,13 @@ var portfolioItems = new PortfolioItemCollection([{
 		title: 'Passkeep',
 		description: 'A web application that I created in order to stop forgetting my passwords, Passkeep stores all my passwords in one safe place.',
 		colorClass: 'bg-eee',
+		links: [
+		{
+			source: 'github',
+			icon: 'fontawesome-github',
+			link: 'https://github.com/theknightsky/Passkeep'
+		}
+		],
 		resources: ['Susy Grid System','Underscore.js','Backbone.js','Jquery','Github','Git'],
 		images: ['images/Passkeep04.png', 'images/Passkeep05.png', 'images/Passkeep06.png']
 },
@@ -32,6 +39,7 @@ var portfolioItems = new PortfolioItemCollection([{
 		title: 'Movie Seating Application',
 		description: 'One day I was looking to buy movie tickets online for my parents and the seat selection process was horrendous.  I thought I would take it upon myself to create a more simple and straight-forward approach.  This is the result.',
 		colorClass: '',
+		links: [{source: 'github', icon: 'fontawesome-github', link: 'https://github.com/theknightsky/MovieSeatingApp'}],
 		resources: ['Susy Grid System','HTML5','CSS3','Jquery','Backbone.js','Underscore.js','require.js','Bootstrap'],
 		images: ['images/MovieSeating01.png','images/MovieSeating02.png'],
 		imagesHalf: ['images/MovieSeating03.png', 'images/MovieSeating04.png']
@@ -40,6 +48,7 @@ var portfolioItems = new PortfolioItemCollection([{
 		title: 'CSS3 Social Ribbons',
 		description: 'Some sleek yet very simple Social Ribbons I created on Cssdeck.com.  They recieved over 6,500+ views!',
 		colorClass: 'bg-eee',
+		links: [{source: 'cssdeck', link: 'http://cssdeck.com/labs/full/v0em3g7j'}],
 		resources: ['HTML5','CSS3','Compass','SCSS'],
 		images: ['images/SocialRibbon01.png', 'images/SocialRibbon02.png']
 },
@@ -55,6 +64,7 @@ var portfolioItems = new PortfolioItemCollection([{
 		title: 'Social Link Flip Pane',
 		description: 'Another masterpiece created in the online editor at Cssdeck.com.  This Social Link Flip Plane flips over to reveal links to social networking sites and features trendy flat design.  Over 3,300+ views!',
 		colorClass: '',
+		links: [{source: 'cssdeck', link: 'http://cssdeck.com/labs/full/i1muikmk'}],
 		resources: ['HTML5','CSS3'],
 		images: ['images/SocialFlip01.png', 'images/SocialFlip02.png']
 },
@@ -78,26 +88,3 @@ portfolioItemsView.render();
 });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

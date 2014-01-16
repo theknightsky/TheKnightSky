@@ -120,7 +120,7 @@ body {
 	top: 0;
 	height: 100%;
 	width: 300px;
-	background: #333;
+	background: lighten(#333, 5%);
 	visibility: hidden;
 	z-index: 10000;
 
@@ -130,7 +130,8 @@ body {
 
 		li{
 			width: 100%;
-			text-indent: 1.5em;
+			text-indent: 2em;
+			border-bottom: 1px dashed #555;
 		}
 
 		a{

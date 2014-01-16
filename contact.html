@@ -85,15 +85,37 @@
 
     <div id="contact-form-container" class="main-section bg-eee">
       <div class="inner-small">
-          <form action="receiving.php" method="POST">
-          <p>Name:</p>
-          <p><input name="name" type="text" id="name" size="40"></p>
-          <p>E-mail address:</p>
-          <p><input name="email" type="text" id="email" size="40"></p>
-          <p>Comment:</p>
-          <p><textarea name="message" cols="55" rows="5"
-          id="message"></textarea></p>
-          <p><input type="submit" name="submit" value="Submit"></p>
+          <form method="post" action="index.php">
+          <p>
+            Name:
+          </p>
+          <p>
+            <input name="name" type="text" size="40">
+          </p>
+
+          <p>
+            E-mail address:
+          </p>
+          <p>
+            <input name="email" type="text" size="40">
+          </p>
+
+          <p>
+            Comment:
+          </p>
+
+          <p>
+            <textarea name="message" cols="55" rows="5"></textarea>
+          </p>
+
+          <p>*What is 2+2?</p>
+          <p>
+            <input name="human">
+          </p>
+
+          <p>
+            <input type="submit" name="submit" value="Submit">
+          </p>
           </form>
       </div>
     </div>

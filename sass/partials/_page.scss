@@ -133,7 +133,6 @@ body {
 			text-indent: 2em;
 			border-bottom: 1px dashed #555;
 		}
-
 		a{
 			height: 100%;
 			width: 100%;
@@ -144,19 +143,13 @@ body {
 			text-decoration: none;
 
 			&.hover-red{
-				&:hover{
-					background: $red;
-				}
+				&:hover{background: lighten($red, 5%);}
 			}
 			&.hover-blue{
-				&:hover{
-					background: $blue;
-				}
+				&:hover{background: lighten($blue, 5%);}
 			}
 			&.hover-yellow{
-				&:hover{
-					background: $yellow;
-				}
+				&:hover{background: lighten($yellow, 5%);}
 			}
 
 		}

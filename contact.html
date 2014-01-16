@@ -24,7 +24,7 @@
     <ul>
       <li><a href="index.html" class="fontawesome-home hover-blue"> Home</a></li>
       <li><a href="portfolio.html" class="fontawesome-book hover-red"> Portfolio</a></li>
-      <li><a href="contact.html" class="fontawesome-envelope-alt hover-yellow"> Contact</a></li>
+      <li><a href="contact.html" class="fontawesome-envelope-alt bg-yellow hover-yellow"> Contact</a></li>
     </ul>
   </nav>
 
@@ -74,15 +74,15 @@
 
     <div id="contact-form-container" class="main-section bg-eee">
       <div class="inner-small">
-          <form action="mailto:theknightsky22@gmail.com" enctype="text/plain" method="post">
+          <form action="receiving.php" method="POST">
           <p>Name:</p>
-          <p><input name="Name" type="text" id="Name" size="40"></p>
+          <p><input name="name" type="text" id="name" size="40"></p>
           <p>E-mail address:</p>
-          <p><input name="E-mail" type="text" id="E-mail" size="40"></p>
+          <p><input name="email" type="text" id="email" size="40"></p>
           <p>Comment:</p>
-          <p><textarea name="Comment" cols="55" rows="5"
-          id="Comment"></textarea></p>
-          <p><input type="submit" name="Submit" value="Submit"></p>
+          <p><textarea name="message" cols="55" rows="5"
+          id="message"></textarea></p>
+          <p><input type="submit" name="submit" value="Submit"></p>
           </form>
       </div>
     </div>

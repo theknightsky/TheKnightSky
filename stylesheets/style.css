@@ -495,15 +495,15 @@ body, select, input, textarea {
 }
 /* line 145, ../sass/partials/_page.scss */
 #main-menu ul a.active-red {
-  border-left: 5px solid #e74c3c;
+  border-bottom: 5px solid #e74c3c;
 }
 /* line 146, ../sass/partials/_page.scss */
 #main-menu ul a.active-blue {
-  border-left: 5px solid #3498db;
+  border-bottom: 5px solid #3498db;
 }
 /* line 147, ../sass/partials/_page.scss */
 #main-menu ul a.active-yellow {
-  border-left: 5px solid #f39c12;
+  border-bottom: 5px solid #f39c12;
 }
 /* line 150, ../sass/partials/_page.scss */
 #main-menu ul a.hover-red:hover {

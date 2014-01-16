@@ -27,9 +27,9 @@ if(isset($_POST['submit']))
     } 
 }
      
-    print "&lt;p&gt;Thank you $name for your message, 
-we will be in contact shortly. &lt;a href=\"index.php\"&gt;Click here&lt;/a&gt; 
-to continue &lt;/p&gt;" ;
+    print "<p>Thank you $name for your message, 
+we will be in contact shortly. <a href=\"index.php\">Click here</a> 
+to continue</p>";
      
  
  

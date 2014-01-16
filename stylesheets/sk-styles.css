@@ -1,29 +1,38 @@
-/* line 6, ../sass/sk-styles.scss */
+/* line 4, ../sass/sk-styles.scss */
+.no-js #sk-container {
+  display: none;
+}
+/* line 5, ../sass/sk-styles.scss */
+.no-js #sk-image-container {
+  display: block;
+}
+
+/* line 11, ../sass/sk-styles.scss */
 #main-header.center-stage #sk-container {
   top: 50%;
 }
-/* line 9, ../sass/sk-styles.scss */
+/* line 14, ../sass/sk-styles.scss */
 #main-header.center-stage #s-container {
   opacity: 1;
 }
-/* line 12, ../sass/sk-styles.scss */
+/* line 17, ../sass/sk-styles.scss */
 #main-header.center-stage #k-container {
   opacity: 1;
 }
-/* line 19, ../sass/sk-styles.scss */
+/* line 24, ../sass/sk-styles.scss */
 #main-header.start-fadein #nav {
   top: 0;
 }
-/* line 20, ../sass/sk-styles.scss */
+/* line 25, ../sass/sk-styles.scss */
 #main-header.start-fadein #name {
   opacity: 1;
   bottom: 1em;
 }
-/* line 21, ../sass/sk-styles.scss */
+/* line 26, ../sass/sk-styles.scss */
 #main-header.start-fadein #sk-container {
   margin-left: -175px;
 }
-/* line 24, ../sass/sk-styles.scss */
+/* line 29, ../sass/sk-styles.scss */
 #main-header.start-fadein #s-container {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -32,21 +41,21 @@
   transform: rotate(45deg);
   left: 10%;
 }
-/* line 27, ../sass/sk-styles.scss */
+/* line 32, ../sass/sk-styles.scss */
 #main-header.start-fadein #s-container #s-top {
   top: -1.5em;
 }
-/* line 30, ../sass/sk-styles.scss */
+/* line 35, ../sass/sk-styles.scss */
 #main-header.start-fadein #s-container #s-bottom {
   bottom: -1.5em;
 }
-/* line 34, ../sass/sk-styles.scss */
+/* line 39, ../sass/sk-styles.scss */
 #main-header.start-fadein #k-container {
   top: -12%;
   right: 0;
   height: 180px;
 }
-/* line 38, ../sass/sk-styles.scss */
+/* line 43, ../sass/sk-styles.scss */
 #main-header.start-fadein #k-container #k-top {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -65,7 +74,7 @@
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
-/* line 47, ../sass/sk-styles.scss */
+/* line 52, ../sass/sk-styles.scss */
 #main-header.start-fadein #k-container #k-bottom {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -85,7 +94,28 @@
   transition: all 0.4s;
 }
 
-/* line 60, ../sass/sk-styles.scss */
+/* line 65, ../sass/sk-styles.scss */
+#sk-image-container {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 250px;
+  width: 350px;
+  margin-top: -125px;
+  margin-left: -175px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 76, ../sass/sk-styles.scss */
+#sk-image-container img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 82, ../sass/sk-styles.scss */
 #sk-container {
   position: absolute;
   top: 20%;
@@ -100,7 +130,7 @@
   transition: all 0.8s;
 }
 
-/* line 73, ../sass/sk-styles.scss */
+/* line 95, ../sass/sk-styles.scss */
 #s-container {
   position: absolute;
   top: 0;
@@ -116,7 +146,7 @@
   transition: all 0.4s;
 }
 
-/* line 85, ../sass/sk-styles.scss */
+/* line 107, ../sass/sk-styles.scss */
 #s-top {
   position: absolute;
   height: 150px;
@@ -135,7 +165,7 @@
   transition: all 0.4s;
 }
 
-/* line 97, ../sass/sk-styles.scss */
+/* line 119, ../sass/sk-styles.scss */
 #s-bottom {
   position: absolute;
   height: 150px;
@@ -154,7 +184,7 @@
   transition: all 0.4s;
 }
 
-/* line 110, ../sass/sk-styles.scss */
+/* line 132, ../sass/sk-styles.scss */
 #k-container {
   position: absolute;
   top: 0;
@@ -170,7 +200,7 @@
   transition: all 0.4s;
 }
 
-/* line 123, ../sass/sk-styles.scss */
+/* line 145, ../sass/sk-styles.scss */
 #k-top {
   position: absolute;
   width: 150px;
@@ -189,7 +219,7 @@
   transition: all 0.4s;
 }
 
-/* line 135, ../sass/sk-styles.scss */
+/* line 157, ../sass/sk-styles.scss */
 #k-bottom {
   position: absolute;
   width: 150px;

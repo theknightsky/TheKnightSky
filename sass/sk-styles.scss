@@ -1,5 +1,10 @@
 @import "compass/css3";
 
+.no-js{
+	#sk-container{display: none;}
+	#sk-image-container{display: block;}
+}
+
 #main-header{
 
 	&.center-stage{
@@ -56,6 +61,23 @@
 }
 
 //-------------------
+
+#sk-image-container{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 250px;
+	width: 350px;
+	margin-top: -125px;
+	margin-left: -175px;
+
+	@include transition(all 0.4s);
+	img{
+		height: auto;
+		max-width: 100%;
+	}
+}
 
 #sk-container{
 	position: absolute;

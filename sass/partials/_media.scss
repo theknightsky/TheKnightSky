@@ -18,6 +18,12 @@
 @include at-breakpoint(6 40em){
 	#main-header{height: 450px;}
 	#main-header.header-small{height: 450px;}
+	#main-header #sk-container{
+		display: none;
+	}
+	#main-header #sk-image-container{
+		display: block;
+	}
 	#main-header #SJK{font-size: 2em;}
 	#page-title-container{
 		#page-title{

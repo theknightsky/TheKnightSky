@@ -5,7 +5,7 @@
 
 define(['config'], function(){
 
-require(['jquery'], function($){
+require(['jquery','sideMenu'], function($){
 
 	$('#main-header').addClass('center-stage');
 	setTimeout(function(){

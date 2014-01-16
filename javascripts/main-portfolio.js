@@ -5,7 +5,7 @@
 
 define(['config'], function(){
 
-require(['backbone','PortfolioItem','PortfolioItemCollection','PortfolioItemView','PortfolioItemListView'], function(Backbone,PortfolioItem,PortfolioItemCollection,PortfolioItemView, PortfolioItemListView){
+require(['backbone','PortfolioItem','PortfolioItemCollection','PortfolioItemView','PortfolioItemListView','sideMenu'], function(Backbone,PortfolioItem,PortfolioItemCollection,PortfolioItemView, PortfolioItemListView, sideMenu){
 
 
 	$('#main-header').addClass('center-stage');

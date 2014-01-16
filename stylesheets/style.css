@@ -465,7 +465,19 @@ body, select, input, textarea {
   font-size: 1.5em;
 }
 
-/* line 120, ../sass/partials/_page.scss */
+/* line 119, ../sass/partials/_page.scss */
+#main-menu {
+  position: fixed;
+  left: -300px;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background: #333;
+  visibility: hidden;
+  z-index: 10000;
+}
+
+/* line 131, ../sass/partials/_page.scss */
 #main-header {
   /*Layout*/
   position: relative;
@@ -473,12 +485,12 @@ body, select, input, textarea {
   width: 100%;
   /*Style*/
 }
-/* line 129, ../sass/partials/_page.scss */
+/* line 140, ../sass/partials/_page.scss */
 #main-header.header-small {
   height: 480px;
 }
 
-/* line 134, ../sass/partials/_page.scss */
+/* line 145, ../sass/partials/_page.scss */
 #main-header #SJK {
   position: absolute;
   left: 0;
@@ -493,12 +505,12 @@ body, select, input, textarea {
   text-align: center;
 }
 
-/* line 155, ../sass/partials/_page.scss */
+/* line 166, ../sass/partials/_page.scss */
 #main-intro {
   /*Layout*/
   padding: 40px 0;
 }
-/* line 159, ../sass/partials/_page.scss */
+/* line 170, ../sass/partials/_page.scss */
 #main-intro p {
   /*Style*/
   color: #888;
@@ -507,11 +519,11 @@ body, select, input, textarea {
   font-family: 'Source Sans Pro', 'sans-serif';
 }
 
-/* line 186, ../sass/partials/_page.scss */
+/* line 197, ../sass/partials/_page.scss */
 #page-title-container {
   /*Layout*/
 }
-/* line 189, ../sass/partials/_page.scss */
+/* line 200, ../sass/partials/_page.scss */
 #page-title-container #page-title {
   margin: 40px 0;
   width: 34.78261%;
@@ -522,20 +534,30 @@ body, select, input, textarea {
   font-family: 'Source Sans Pro', 'sans-serif';
 }
 
-/* line 231, ../sass/partials/_page.scss */
+/* line 234, ../sass/partials/_page.scss */
+#portfolio-items-container {
+  margin: 0;
+  padding: 0;
+}
+/* line 238, ../sass/partials/_page.scss */
+#portfolio-items-container li {
+  list-style-type: none;
+}
+
+/* line 243, ../sass/partials/_page.scss */
 .portfolio-item {
   /*Layout*/
   padding: 40px 0;
   font-family: 'Source Sans Pro', 'sans-serif';
 }
-/* line 236, ../sass/partials/_page.scss */
+/* line 248, ../sass/partials/_page.scss */
 .portfolio-item .pf-info {
   width: 100%;
   float: left;
   margin-right: 1.44928%;
   display: inline;
 }
-/* line 240, ../sass/partials/_page.scss */
+/* line 252, ../sass/partials/_page.scss */
 .portfolio-item .pf-images {
   padding: 1em 0;
   width: 100%;
@@ -543,33 +565,33 @@ body, select, input, textarea {
   margin-right: 1.44928%;
   display: inline;
 }
-/* line 244, ../sass/partials/_page.scss */
+/* line 256, ../sass/partials/_page.scss */
 .portfolio-item .pf-images img {
   height: auto;
   max-width: 100%;
 }
-/* line 250, ../sass/partials/_page.scss */
+/* line 262, ../sass/partials/_page.scss */
 .portfolio-item h1 {
   font-weight: 300;
 }
-/* line 254, ../sass/partials/_page.scss */
+/* line 266, ../sass/partials/_page.scss */
 .portfolio-item p {
   font-size: 1.2em;
 }
-/* line 258, ../sass/partials/_page.scss */
+/* line 270, ../sass/partials/_page.scss */
 .portfolio-item img {
   height: auto;
   max-width: 100%;
   margin: 2em 0;
 }
 
-/* line 272, ../sass/partials/_page.scss */
+/* line 284, ../sass/partials/_page.scss */
 .portfolio-item .resources {
   position: relative;
   padding: 2em 0;
   border-bottom: 1px solid rgba(153, 153, 153, 0.5);
 }
-/* line 277, ../sass/partials/_page.scss */
+/* line 289, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc {
   display: inline-block;
   position: relative;
@@ -586,13 +608,13 @@ body, select, input, textarea {
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 292, ../sass/partials/_page.scss */
+/* line 304, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc:hover {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 297, ../sass/partials/_page.scss */
+/* line 309, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc::before {
   content: '';
   position: absolute;
@@ -604,7 +626,7 @@ body, select, input, textarea {
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
 }
-/* line 308, ../sass/partials/_page.scss */
+/* line 320, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc::after {
   content: '';
   position: absolute;
@@ -620,9 +642,88 @@ body, select, input, textarea {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 322, ../sass/partials/_page.scss */
+/* line 334, ../sass/partials/_page.scss */
 .portfolio-item .resources.red span.rsc {
   background: #e74c3c;
+}
+
+/* line 19, ../sass/sideMenu.scss */
+#full-wrap::after {
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9000;
+  display: block;
+  visibility: hidden;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 33, ../sass/sideMenu.scss */
+#full-wrap #content-wrap {
+  height: 100%;
+  position: relative;
+}
+
+/* line 43, ../sass/sideMenu.scss */
+#full-wrap.side-menu #main-menu {
+  visibility: visisble;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 48, ../sass/sideMenu.scss */
+#full-wrap.side-menu #main-nav {
+  left: 0;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 53, ../sass/sideMenu.scss */
+#full-wrap.side-menu #content-wrap {
+  margin-left: 0;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* line 62, ../sass/sideMenu.scss */
+#full-wrap.side-menu.side-menu-open::after {
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+/* line 69, ../sass/sideMenu.scss */
+#full-wrap.side-menu.side-menu-open #main-menu {
+  left: 0;
+  visibility: visible;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 75, ../sass/sideMenu.scss */
+#full-wrap.side-menu.side-menu-open #main-nav {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 80, ../sass/sideMenu.scss */
+#full-wrap.side-menu.side-menu-open #content-wrap {
+  -webkit-transition: margin-left 0.2s ease-in;
+  -moz-transition: margin-left 0.2s ease-in;
+  -o-transition: margin-left 0.2s ease-in;
+  transition: margin-left 0.2s ease-in;
 }
 
 /* line 4, ../sass/sk-styles.scss */

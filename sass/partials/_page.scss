@@ -56,38 +56,23 @@ body, select, input, textarea {
 //---- CONTAINER CLASSES ----//
 	.inner-small{
 		@include container;
-		// @include susy-grid-background;
 		height: 100%;
 	}
 //---- END CONTAINER CLASSES ----//
 
 
-
 //---------------------//
 //---- MAIN STYLES ----//
 //---------------------//
-.no-js{
-	#sk-container{
-
-	}
-}
-
-body {
-
-}
-
 #main-nav{
-	/*Layout*/
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	height: 65px;
 	z-index: 9999;
-	// padding: 0 2em;
-
-	/*Style*/
 	background: rgba(#000, 0.4);
+
 	a{
 		text-decoration: none;
 		color: #fff;
@@ -97,7 +82,6 @@ body {
 	}
 
 	ul{
-		/*Layout*/
 		margin: 0;
 		padding: 0;
 		float: left;
@@ -105,10 +89,8 @@ body {
 		line-height: 65px;
 
 		li{
-			/*Style*/
 			color: #fff;
 			font-size: 1.5em;
-
 		}
 
 	}
@@ -163,13 +145,9 @@ body {
 
 
 #main-header{
-	/*Layout*/
 	position: relative;
 	height: 650px;
 	width: 100%;
-
-	/*Style*/
-	// background: $blue;
 
 	&.header-small{
 		height: 480px;
@@ -177,14 +155,12 @@ body {
 }
 
 #main-header #SJK{
-	//Layout
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 1em;
 	margin: 0 auto;
 
-	//Style
 	color: #fff;
 	font-size: 2.5em;
 	font-family: 'Source Sans Pro', 'sans-serif';
@@ -234,11 +210,12 @@ footer {
 	}
 
 	input, textarea{
-		width: 90%;
+		width: 100%;
 		margin-bottom: 1em;
 		@include appearance(none);
 		border: none;
-		padding: 0.5em 5%;
+		padding: 0.5em 0;
+		text-indent: 1em;
 		outline-color: $yellow;
 		color: #999;
 	}
@@ -299,7 +276,6 @@ footer {
 // }
 
 #page-title-container{
-	/*Layout*/
 	
 	#page-title{
 		margin: 40px 0;
@@ -345,7 +321,6 @@ footer {
 }
 
 .portfolio-item{
-	/*Layout*/
 	padding: 40px 0;
 	font-family: 'Source Sans Pro', 'sans-serif';
 
@@ -367,9 +342,7 @@ footer {
 		font-weight: 300;
 	}
 
-	p{
-		font-size: 1.2em;
-	}
+	p{font-size: 1.2em;}
 	p a{
 		text-decoration: none;
 		color: $red;
@@ -378,15 +351,13 @@ footer {
 	}
 
 	img{
-		//Layout
 		height: auto;
 		max-width: 100%;
 		margin: 2em 0;
-		// padding-top: 4em;
 	}
 	.img-half{
-	@include span-columns(7, 14);
-	@include nth-omega(2n);
+		@include span-columns(7, 14);
+		@include nth-omega(2n);
 	}
 
 }
@@ -397,18 +368,16 @@ footer {
 		border-bottom: 1px solid rgba(#999, 0.5%);
 
 		span.rsc{
-			//Layout
-			display: inline-block;
-			position: relative;
-			margin: 0 1em 1em 1em;
-			padding: 0 1em;
-			height: 40px;
-			line-height: 40px;
-
-			//Style
 			color: #fff;
-			font-weight: 600;
+			height: 40px;
+			padding: 0 1em;
 			cursor: default;
+			font-weight: 600;
+			line-height: 40px;
+			position: relative;
+			display: inline-block;
+			margin: 0 1em 1em 1em;
+
 			@include border-radius(0 5px 5px 0);
 
 			&:hover{

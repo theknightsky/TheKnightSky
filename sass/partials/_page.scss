@@ -115,6 +115,7 @@ body {
 }
 
 #main-menu{
+	padding-top: 65px;
 	position: fixed;
 	left: -300px;
 	top: 0;
@@ -142,9 +143,9 @@ body {
 			color: #fff;
 			text-decoration: none;
 
-			&.active-red{color: $red;}
-			&.active-blue{color: $blue;}
-			&.active-yellow{color: $yellow;}
+			&.active-red{background:$red;}
+			&.active-blue{background:$blue;}
+			&.active-yellow{background:$yellow;}
 
 			&.hover-red{
 				&:hover{background: $red; color: #fff;}

@@ -199,6 +199,22 @@ footer {
 
 }
 
+#to-top{
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background:rgba(#000, 0.5);
+
+	a{
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
 #main-intro{
 	/*Layout*/
 	padding: 40px 0;

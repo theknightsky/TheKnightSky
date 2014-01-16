@@ -1064,43 +1064,42 @@ body, select, input, textarea {
   }
   /* line 25, ../sass/partials/_media.scss */
   #main-menu ul li a {
-    text-indent: 0;
-    text-align: center;
+    text-indent: 30%;
   }
 
-  /* line 30, ../sass/partials/_media.scss */
+  /* line 29, ../sass/partials/_media.scss */
   #main-header {
     height: 450px;
   }
 
-  /* line 31, ../sass/partials/_media.scss */
+  /* line 30, ../sass/partials/_media.scss */
   #main-header.header-small {
     height: 450px;
   }
 
-  /* line 32, ../sass/partials/_media.scss */
+  /* line 31, ../sass/partials/_media.scss */
   #main-header #sk-container {
     display: none;
   }
 
-  /* line 35, ../sass/partials/_media.scss */
+  /* line 34, ../sass/partials/_media.scss */
   #main-header #sk-image-container {
     display: block;
   }
 
-  /* line 38, ../sass/partials/_media.scss */
+  /* line 37, ../sass/partials/_media.scss */
   #main-header #SJK {
     font-size: 2em;
   }
 
-  /* line 40, ../sass/partials/_media.scss */
+  /* line 39, ../sass/partials/_media.scss */
   #page-title-container #page-title {
     width: 100%;
     float: left;
     margin-right: 3.44828%;
     font-size: 3em;
   }
-  /* line 44, ../sass/partials/_media.scss */
+  /* line 43, ../sass/partials/_media.scss */
   #page-title-container #portfolio-views {
     width: 100%;
     float: left;
@@ -1108,19 +1107,19 @@ body, select, input, textarea {
     margin: 0 0 2em 0;
   }
 
-  /* line 50, ../sass/partials/_media.scss */
+  /* line 49, ../sass/partials/_media.scss */
   .portfolio-item .pf-info {
     width: 100%;
     float: left;
     margin-right: 3.44828%;
   }
-  /* line 53, ../sass/partials/_media.scss */
+  /* line 52, ../sass/partials/_media.scss */
   .portfolio-item .pf-images {
     width: 100%;
     float: left;
     margin-right: 3.44828%;
   }
-  /* line 56, ../sass/partials/_media.scss */
+  /* line 55, ../sass/partials/_media.scss */
   .portfolio-item .img-half {
     width: 100%;
     float: left;

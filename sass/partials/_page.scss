@@ -80,18 +80,16 @@ body {
 	top: 0;
 	right: 0;
 	left: 0;
-	height: 80px;
+	height: 65px;
 	z-index: 9999;
-	line-height: 80px;
 	// padding: 0 2em;
 
 	/*Style*/
 	background: rgba(#000, 0.4);
 	a{
 		text-decoration: none;
-		line-height: 80px;
 		color: #fff;
-		font-size: 2em;
+		font-size: 1.5em;
 		@include border-radius(50%);
 	}
 
@@ -101,7 +99,7 @@ body {
 		padding: 0;
 		float: left;
 		height: 100%;
-		line-height: 90px;
+		line-height: 65px;
 
 		li{
 			/*Style*/
@@ -220,7 +218,7 @@ footer {
 #portfolio-items-container.slide-container{;
 
 	.portfolio-item{
-		height: 500px;
+		// height: 500px;
 		float: left;
 	}
 }
@@ -231,16 +229,14 @@ footer {
 	font-family: 'Source Sans Pro', 'sans-serif';
 
 	.pf-info{
-		@include span-columns(7, 14);
+		@include span-columns(14, 14);
 
 	}
 	.pf-images{
 		padding: 1em 0;
-		background:$purple;
-		@include span-columns(7 omega, 14);
+		@include span-columns(14, 14);
 
 		img{
-			display: none;
 			height: auto;
 			max-width: 100%;
 		}

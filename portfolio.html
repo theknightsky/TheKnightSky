@@ -43,6 +43,8 @@
 <script type="text/x-handlebars-template" id="portfolio-slide-template">
     <div class="portfolio-item {{colorClass}}">
       <div class="inner-small">
+      <button id="prevSlide">Previous</button>
+        <button id="nextSlide">Next</button>
         <div class="pf-info">
             <h1>Slide View - {{title}}</h1>
             <p>{{description}}</p>
@@ -102,7 +104,7 @@
         <h1 id="page-title" class="color-red">Portfolio</h1>
         <div id="portfolio-views">
           <ul>
-            <li id="toList" class="fontawesome-reorder"> List View</li>
+            <li id="toList" class="fontawesome-reorder"> List All</li>
             <li id="toSlide" class="fontawesome-columns"> Slide View</li>
           </ul>
         </div>

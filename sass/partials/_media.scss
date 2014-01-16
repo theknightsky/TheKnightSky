@@ -17,8 +17,8 @@
 
 @include at-breakpoint(6 40em){
 	#main-menu{
-		left: -230px;
-		width: 230px;
+		left: -250px;
+		width: 250px;
 		ul li{
 			// text-align: center;
 		}
@@ -26,6 +26,7 @@
 			text-indent: 30%;
 		}
 	}
+	#main-nav{position: absolute;}
 	#main-header{height: 450px;}
 	#main-header.header-small{height: 450px;}
 	#main-header #sk-container{

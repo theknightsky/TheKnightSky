@@ -613,6 +613,18 @@ body, select, input, textarea {
   max-width: 100%;
   margin: 2em 0;
 }
+/* line 313, ../sass/partials/_page.scss */
+.portfolio-item .img-half {
+  width: 49.27536%;
+  float: left;
+  margin-right: 1.44928%;
+  display: inline;
+}
+/* line 184, ../../../compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.9/sass/susy/_grid.scss */
+.portfolio-item .img-half:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
 
 /* line 320, ../sass/partials/_page.scss */
 .portfolio-item .resources {
@@ -1059,8 +1071,8 @@ body, select, input, textarea {
 @media (max-width: 40em) {
   /* line 19, ../sass/partials/_media.scss */
   #main-menu {
-    left: -230px;
-    width: 230px;
+    left: -250px;
+    width: 250px;
   }
   /* line 25, ../sass/partials/_media.scss */
   #main-menu ul li a {
@@ -1068,38 +1080,43 @@ body, select, input, textarea {
   }
 
   /* line 29, ../sass/partials/_media.scss */
+  #main-nav {
+    position: absolute;
+  }
+
+  /* line 30, ../sass/partials/_media.scss */
   #main-header {
     height: 450px;
   }
 
-  /* line 30, ../sass/partials/_media.scss */
+  /* line 31, ../sass/partials/_media.scss */
   #main-header.header-small {
     height: 450px;
   }
 
-  /* line 31, ../sass/partials/_media.scss */
+  /* line 32, ../sass/partials/_media.scss */
   #main-header #sk-container {
     display: none;
   }
 
-  /* line 34, ../sass/partials/_media.scss */
+  /* line 35, ../sass/partials/_media.scss */
   #main-header #sk-image-container {
     display: block;
   }
 
-  /* line 37, ../sass/partials/_media.scss */
+  /* line 38, ../sass/partials/_media.scss */
   #main-header #SJK {
     font-size: 2em;
   }
 
-  /* line 39, ../sass/partials/_media.scss */
+  /* line 40, ../sass/partials/_media.scss */
   #page-title-container #page-title {
     width: 100%;
     float: left;
     margin-right: 3.44828%;
     font-size: 3em;
   }
-  /* line 43, ../sass/partials/_media.scss */
+  /* line 44, ../sass/partials/_media.scss */
   #page-title-container #portfolio-views {
     width: 100%;
     float: left;
@@ -1107,19 +1124,19 @@ body, select, input, textarea {
     margin: 0 0 2em 0;
   }
 
-  /* line 49, ../sass/partials/_media.scss */
+  /* line 50, ../sass/partials/_media.scss */
   .portfolio-item .pf-info {
     width: 100%;
     float: left;
     margin-right: 3.44828%;
   }
-  /* line 52, ../sass/partials/_media.scss */
+  /* line 53, ../sass/partials/_media.scss */
   .portfolio-item .pf-images {
     width: 100%;
     float: left;
     margin-right: 3.44828%;
   }
-  /* line 55, ../sass/partials/_media.scss */
+  /* line 56, ../sass/partials/_media.scss */
   .portfolio-item .img-half {
     width: 100%;
     float: left;

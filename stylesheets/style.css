@@ -568,6 +568,22 @@ body, select, input, textarea {
 }
 
 /* line 232, ../sass/partials/_page.scss */
+#contact-form-container .inner-small {
+  *zoom: 1;
+  max-width: 49em;
+  _width: 49em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#contact-form-container .inner-small:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 238, ../sass/partials/_page.scss */
 #contact-form-container input, #contact-form-container textarea {
   width: 90%;
   margin-bottom: 1em;
@@ -579,52 +595,52 @@ body, select, input, textarea {
   outline-color: #f39c12;
   color: #999;
 }
-/* line 242, ../sass/partials/_page.scss */
+/* line 247, ../sass/partials/_page.scss */
 #contact-form-container input[type="submit"] {
   width: 100%;
   background: #f39c12;
   color: #976008;
 }
 
-/* line 268, ../sass/partials/_page.scss */
+/* line 273, ../sass/partials/_page.scss */
 #page-title-container {
   /*Layout*/
 }
-/* line 271, ../sass/partials/_page.scss */
+/* line 276, ../sass/partials/_page.scss */
 #page-title-container #page-title {
   margin: 40px 0;
   width: 100%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 2.04082%;
   display: inline;
   font-size: 5em;
   font-family: 'Source Sans Pro', 'sans-serif';
 }
 
-/* line 305, ../sass/partials/_page.scss */
+/* line 310, ../sass/partials/_page.scss */
 #portfolio-items-container {
   margin: 0;
   padding: 0;
 }
-/* line 309, ../sass/partials/_page.scss */
+/* line 314, ../sass/partials/_page.scss */
 #portfolio-items-container li {
   list-style-type: none;
 }
 
-/* line 314, ../sass/partials/_page.scss */
+/* line 319, ../sass/partials/_page.scss */
 .portfolio-item {
   /*Layout*/
   padding: 40px 0;
   font-family: 'Source Sans Pro', 'sans-serif';
 }
-/* line 319, ../sass/partials/_page.scss */
+/* line 324, ../sass/partials/_page.scss */
 .portfolio-item .pf-info {
   width: 100%;
   float: left;
   margin-right: 1.44928%;
   display: inline;
 }
-/* line 323, ../sass/partials/_page.scss */
+/* line 328, ../sass/partials/_page.scss */
 .portfolio-item .pf-images {
   padding: 1em 0;
   width: 100%;
@@ -632,26 +648,26 @@ body, select, input, textarea {
   margin-right: 1.44928%;
   display: inline;
 }
-/* line 327, ../sass/partials/_page.scss */
+/* line 332, ../sass/partials/_page.scss */
 .portfolio-item .pf-images img {
   height: auto;
   max-width: 100%;
 }
-/* line 333, ../sass/partials/_page.scss */
+/* line 338, ../sass/partials/_page.scss */
 .portfolio-item h1 {
   font-weight: 300;
 }
-/* line 337, ../sass/partials/_page.scss */
+/* line 342, ../sass/partials/_page.scss */
 .portfolio-item p {
   font-size: 1.2em;
 }
-/* line 341, ../sass/partials/_page.scss */
+/* line 346, ../sass/partials/_page.scss */
 .portfolio-item img {
   height: auto;
   max-width: 100%;
   margin: 2em 0;
 }
-/* line 348, ../sass/partials/_page.scss */
+/* line 353, ../sass/partials/_page.scss */
 .portfolio-item .img-half {
   width: 49.27536%;
   float: left;
@@ -664,13 +680,13 @@ body, select, input, textarea {
   margin-right: 0;
 }
 
-/* line 355, ../sass/partials/_page.scss */
+/* line 360, ../sass/partials/_page.scss */
 .portfolio-item .resources {
   position: relative;
   padding: 2em 0;
   border-bottom: 1px solid rgba(153, 153, 153, 0.5);
 }
-/* line 360, ../sass/partials/_page.scss */
+/* line 365, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc {
   display: inline-block;
   position: relative;
@@ -687,13 +703,13 @@ body, select, input, textarea {
   -o-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
 }
-/* line 375, ../sass/partials/_page.scss */
+/* line 380, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc:hover {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-/* line 380, ../sass/partials/_page.scss */
+/* line 385, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc::before {
   content: '';
   position: absolute;
@@ -705,7 +721,7 @@ body, select, input, textarea {
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
 }
-/* line 391, ../sass/partials/_page.scss */
+/* line 396, ../sass/partials/_page.scss */
 .portfolio-item .resources span.rsc::after {
   content: '';
   position: absolute;
@@ -721,7 +737,7 @@ body, select, input, textarea {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 405, ../sass/partials/_page.scss */
+/* line 410, ../sass/partials/_page.scss */
 .portfolio-item .resources.red span.rsc {
   background: #e74c3c;
 }

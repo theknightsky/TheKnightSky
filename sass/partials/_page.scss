@@ -229,8 +229,13 @@ footer {
 
 #contact-form-container{
 
+	.inner-small{
+		$total-columns: 10;
+		$container-style: magic;
+		@include container;
+	}
+
 	input, textarea{
-		// @include span-columns($total-columns);
 		width: 90%;
 		margin-bottom: 1em;
 		@include appearance(none);

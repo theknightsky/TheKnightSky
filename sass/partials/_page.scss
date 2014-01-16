@@ -95,6 +95,7 @@ body {
 		text-decoration: none;
 		color: #fff;
 		font-size: 1.5em;
+		cursor: pointer;
 		@include border-radius(50%);
 	}
 
@@ -125,6 +126,43 @@ body {
 	background: #333;
 	visibility: hidden;
 	z-index: 10000;
+
+	ul{
+		margin: 0;
+		padding: 0;
+
+		li{
+			width: 100%;
+			text-indent: 1.5em;
+		}
+
+		a{
+			height: 100%;
+			width: 100%;
+			padding: 1em 0;
+			font-size: 1.2em;
+			display: block;
+			color: #fff;
+			text-decoration: none;
+
+			&.hover-red{
+				&:hover{
+					background: $red;
+				}
+			}
+			&.hover-blue{
+				&:hover{
+					background: $blue;
+				}
+			}
+			&.hover-yellow{
+				&:hover{
+					background: $yellow;
+				}
+			}
+
+		}
+	}
 }
 
 

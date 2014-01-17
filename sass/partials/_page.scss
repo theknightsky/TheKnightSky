@@ -97,7 +97,7 @@ body, select, input, textarea {
 }
 
 #main-menu{
-	padding-top: 65px;
+	// padding-top: 65px;
 	position: fixed;
 	left: -300px;
 	top: 0;
@@ -106,6 +106,13 @@ body, select, input, textarea {
 	background: lighten(#333, 5%);
 	visibility: hidden;
 	z-index: 10000;
+	#main-menu-title{
+		display: block;
+		color: #999;
+		padding: 0;
+		text-align: center;
+		font-size: 1.2em;
+	}
 
 	ul{
 		margin: 0;

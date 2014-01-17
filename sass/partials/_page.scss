@@ -227,6 +227,7 @@ footer {
 		color: #999;
 	}
 	input[type="submit"]{
+		text-indent: 0;
 		width: 100%;
 		background: $yellow;
 		color: darken($yellow, 20%);
